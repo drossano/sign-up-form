@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+ 
+#title {
+  width: calc(100% / 3 * 1);
+}
+#content {
+  width: calc(100% / 3 * 2);
+}
