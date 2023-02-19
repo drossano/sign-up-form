@@ -32,6 +32,19 @@ body {
   flex-direction: column;
   gap:10px;
 }
+
+#title{
+  position: relative;
+}
+
+#photo-credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+}
 /* CSS Reset*/
 
 /* Box sizing rules */
