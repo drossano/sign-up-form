@@ -64,19 +64,18 @@ body {
   width: 100%;
 }
 
-.content h1{
+#hook{
   margin-left: var(--left-spacing);
+  margin-right: 100px;
 }
-h2 {
-  margin-left: var(--left-spacing);
-}
+
 button {
   margin-left: var(--left-spacing);
 }
 
-
-
-
+#content h2 {
+  margin-left: var(--left-spacing);
+}
 /* CSS Reset*/
 
 /* Box sizing rules */
