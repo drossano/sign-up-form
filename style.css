@@ -94,6 +94,21 @@ body {
 
 button {
   margin-left: var(--left-spacing);
+  width: 200px;
+  padding: 10px 0px;
+  color: white;
+  background: rgb(37, 113, 228);
+  border: 0px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(30, 93, 187);
+}
+
+button:active {
+  background: rgb(37, 113, 228);
 }
 
 #content h2 {
