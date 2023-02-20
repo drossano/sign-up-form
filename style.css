@@ -8,8 +8,16 @@ body {
   width: calc(100% / 3 * 1);
 }
 #content {
-  background: white;
+  --left-spacing: 100px;
+
+
+  background:rgb(238, 238, 238);
   width: calc(100% / 3 * 2);
+  display: flex;
+
+
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-input {
@@ -49,6 +57,24 @@ body {
 #photo-credit {
   align-self: center;
 }
+
+.form {
+  background-color: white;
+  padding-left: var(--left-spacing);
+  width: 100%;
+}
+
+.content h1{
+  margin-left: var(--left-spacing);
+}
+h2 {
+  margin-left: var(--left-spacing);
+}
+button {
+  margin-left: var(--left-spacing);
+}
+
+
 
 
 /* CSS Reset*/
