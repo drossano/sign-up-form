@@ -1,11 +1,12 @@
 body {
-  background-image: url(images/clouds.jpg);
   display: flex;
   flex-direction: row;
 }
  
 #title {
   width: calc(100% / 3 * 1);
+  background-image: url(images/clouds.jpg);
+  background-size: auto 100%;
 }
 #content {
   --left-spacing: 100px;
