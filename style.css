@@ -2,16 +2,13 @@
   font-family: Marksman;
   src: url(fonts/marksman.ttf);
 }
-* {
-
-}
 
 body {
   display: flex;
   flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 #title {
   width: calc(100% / 3 * 1);
   background-image: url(images/clouds.jpg);
@@ -59,11 +56,23 @@ body {
 }
 
 #logo {
+  height: 100px;
   font-family: Marksman;
   text-align: center;
   width: 100%;
   align-self: center;
   background-color: #00000038;
+  font-size: 2em;
+  line-height: 2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-image {
+  height: inherit;
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(342deg) brightness(108%) contrast(108%);
 }
 
 #photo-credit {
