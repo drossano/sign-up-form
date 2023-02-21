@@ -21,6 +21,24 @@ body {
   justify-content: flex-end;
   gap: 75%;
 }
+
+#photo-credit a {
+  color: white;
+}
+
+#photo-credit a:hover {
+  text-decoration: none;
+}
+
+#content a {
+  text-decoration: none;
+  color: rgb(37, 113, 228);
+} 
+
+#content a:hover {
+  text-decoration: underline;
+}
+
 #content {
   --left-spacing: 100px;
 
