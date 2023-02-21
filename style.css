@@ -114,6 +114,20 @@ button:active {
 #content h2 {
   margin-left: var(--left-spacing);
 }
+
+input {
+  border: 1px solid rgb(167, 183, 199);
+  border-radius: 3px;
+}
+
+.error {
+  border: 1px solid rgb(255, 0, 76)
+}
+
+input:focus {
+outline: none;
+box-shadow: 1px 1px 3px rgb(37,93,187);
+}
 /* CSS Reset*/
 
 /* Box sizing rules */
