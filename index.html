@@ -35,7 +35,8 @@
               </div>
               <div class="form-input">
                 <label for="password">Password</label>
-                <input type="password" name="pass" id="password" class="error">
+                <input type="password" name="pass" id="password" class="error" onkeyup="validate_password()">
+                <span id="wrong-password-alert"></span>
               </div>
             </div>
             <div class="column">
@@ -60,5 +61,17 @@
 
       <h2>Already have an account? <a href="">Log in</a></h2>
   </div>
+  <script>
+    function validate_password() {
+      var password = document.getElementById('password').value;
+      var confirm_password = document.getElementById('confirm-password').value;
+      if (password != confirm_password) {
+        document.getElementById('wrong-password-alert').style.color='red';
+        document.getElementById('wrong-password-alert').innerHTML = 'Passwords must match';
+      } else {
+        document.getElementById('wrong-password-alert').innerHTML = '';
+      }
+    }
+  </script>
 </body>
 </html>
