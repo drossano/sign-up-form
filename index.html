@@ -27,30 +27,30 @@
             <div class="column">
               <div class="form-input">
                 <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname">
+                <input type="text" name="fname" id="fname" tabindex="1">
               </div>
               <div class="form-input">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" tabindex="3">
               </div>
               <div class="form-input">
                 <label for="password">Password</label>
-                <input type="password" name="pass" id="password" onkeyup="validate_password()">
+                <input type="password" name="pass" id="password" tabindex="5" onkeyup="validate_password()">
                 <span id="wrong-password-alert"></span>
               </div>
             </div>
             <div class="column">
               <div class="form-input">
                 <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname">
+                <input type="text" name="lname" id="lname" tabindex="2">
               </div>
               <div class="form-input">
                 <label for="tel-number">Phone Number</label>
-                <input type="tel" name="tel-number" id="tel-number">
+                <input type="tel" name="tel-number" id="tel-number" tabindex="4">
               </div>
               <div class="form-input">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password" onkeyup="validate_password()">
+                <input type="password" name="confirm-password" id="confirm-password" onkeyup="validate_password()" tabindex="6">
               </div>
             </div>
           </div>
