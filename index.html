@@ -35,7 +35,7 @@
               </div>
               <div class="form-input">
                 <label for="password">Password</label>
-                <input type="password" name="pass" id="password" class="error" onkeyup="validate_password()">
+                <input type="password" name="pass" id="password" onkeyup="validate_password()">
                 <span id="wrong-password-alert"></span>
               </div>
             </div>
@@ -50,7 +50,7 @@
               </div>
               <div class="form-input">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password" class="error">
+                <input type="password" name="confirm-password" id="confirm-password" onkeyup="validate_password()">
               </div>
             </div>
           </div>
@@ -66,10 +66,14 @@
       var password = document.getElementById('password').value;
       var confirm_password = document.getElementById('confirm-password').value;
       if (password != confirm_password) {
-        document.getElementById('wrong-password-alert').style.color='red';
+        document.getElementById('wrong-password-alert').style.color='rgb(255, 0, 76)';
         document.getElementById('wrong-password-alert').innerHTML = 'Passwords must match';
+        document.getElementById('password').classList.add("error");
+        document.getElementById('confirm-password').classList.add("error");
       } else {
         document.getElementById('wrong-password-alert').innerHTML = '';
+        document.getElementById('password').classList.remove("error");
+        document.getElementById('confirm-password').classList.remove("error");
       }
     }
   </script>
